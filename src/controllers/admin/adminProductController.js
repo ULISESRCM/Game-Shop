@@ -2,13 +2,13 @@ const { products} = require('../../data');
 
 module.exports = {
     list: (req, res) => {
-        res.render('admin/products/listProduct', {
+        res.render('p/listProduct', {
             titulo: "Listado de productos",
             producto: products
         })
     },
     productAdd: (req, res) => {
-        res.render('admin/products/addProduct', {
+        res.render('products/addProduct', {
             titulo: "Agregar producto"
         })
     }

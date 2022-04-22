@@ -23,9 +23,10 @@ app.set('view engine', 'ejs');
 
 // Middleware
 app.use('/', indexRouter);
-app.use('/user', usersRouter);
+app.use('/user',usersRouter);
 app.use('/products', productsRouter);
 app.use('/admin', adminRouter);
+
 
 
 app.listen(process.env.PORT || PORT, () => console.log(`http://localhost:${PORT}`))
